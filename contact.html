@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Email Template</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .logo {
+        margin: 30px auto;
+        text-align: center;
+      }
+
+      .logo img {
+        width: 150px;
+      }
+
+      .email-container {
+        width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      .email-header {
+        margin-bottom: 20px;
+      }
+      .email-header h1 {
+        margin: 0;
+        color: #333;
+      }
+      .email-body {
+        margin-bottom: 20px;
+      }
+      .email-footer {
+        text-align: center;
+        color: #888;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="logo/logo.svg" />
+    </div>
+    <div class="email-container">
+      <div class="email-header">
+        <h3>Subject: {Subject}</h3>
+      </div>
+      <div class="email-body">
+        <p>Dear {Name},</p>
+        <p>{Message}</p>
+        <p>Best regards,</p>
+        <p>{Your Name}</p>
+      </div>
+      <div class="email-footer">
+        <p>You received this email from Puthi Pallab.</p>
+      </div>
+    </div>
+  </body>
+</html>
